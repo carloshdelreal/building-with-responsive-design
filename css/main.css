@@ -1,0 +1,151 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* NAVBAR */
+
+.top-nav{
+    height: 48px;
+    position: relative;
+}
+.u-clear{
+    
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 48px;
+    width: 200px;
+    z-index: 1;
+    
+}
+.logo a{
+    display: block;
+    width: 106px;
+    height: 48px;
+}
+.logo div{
+    background: 
+        linear-gradient( to bottom right,magenta,yellow);
+    width: 106px;
+    height: 48px;
+}
+.logo svg{
+    width: 60px;
+    margin: 15px 0px 0px 19px;
+}
+
+.nav-tnw{
+    background-color: aquamarine;
+}
+
+.nav-sections{
+    display: inline;
+    background-color: goldenrod;
+}
+
+.nav-icons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    height: 48px;
+    
+    z-index: 0;
+}
+.nav-icons li:first-child{
+    float: right;
+    width: 45px;
+    height: 48px;
+}
+.nav-icons li:first-child div{
+    width: 16px;
+    height: 19px;
+    margin: 15px 0px 0px 6px;
+}
+
+.nav-icons li:last-child{
+    float: right;
+    /* background-color: yellow; */
+    width: 45px;
+    height: 48px;
+
+    border-left: 1px solid #cacaca;
+    border-right: 1px solid #cacaca;
+}
+.nav-icons li:last-child div{
+    background: url(../img/icons-sprite.svg) -832px -831px no-repeat;
+    width: 16px;
+    height: 19px;
+    margin: 16px 0px 0px 16px;
+}
+.nav-icons span{
+    width: 22px;
+    height: 2px;
+    margin: 6px 0px 0px 5px;
+    background-color: red;
+    display: block;
+}
+
+@media only screen and (min-width: 768px){
+
+    .logo{
+        height: 80px;
+    }
+    .nav-tnw{
+        width: 100%;
+        height: 32px;
+    }
+    .nav-icons{
+        height: 48px;
+        top: 32px;
+    }
+}
+/* NAVBAR */
