@@ -46,23 +46,26 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+body, *:after, *:before{
+    box-sizing: border-box;
+}
 
+a{
+    text-decoration: none;
+}
 /* NAVBAR */
 
 .top-nav{
     height: 48px;
     position: relative;
 }
-.u-clear{
-    
-}
 
 .logo{
     position: absolute;
     top: 0;
     left: 0;
-    height: 48px;
-    width: 200px;
+    height: 100%;
+    width: auto;
     z-index: 1;
     
 }
@@ -79,16 +82,29 @@ table {
 }
 .logo svg{
     width: 60px;
-    margin: 15px 0px 0px 19px;
+    margin: 18.75% 0px 0px 23.75%;
 }
-
 .nav-tnw{
-    background-color: aquamarine;
+    background: #131313;
+    
+}
+.nav-tnw a{
+    color: hsla(0,0%,100%,.6);
+}
+.nav-tnw a:hover{
+    color:#fff;
 }
 
-.nav-sections{
-    display: inline;
-    background-color: goldenrod;
+.nav-sections a{
+    color: #aaa;
+}
+
+.nav-sections a:hover{
+    color:#000;
+}
+.nav-tnw, .nav-sections{
+    /* background-color: aquamarine; */
+    visibility: hidden;
 }
 
 .nav-icons{
@@ -139,13 +155,63 @@ table {
     .logo{
         height: 80px;
     }
+    .nav-tnw, .nav-sections{
+        visibility: visible;
+    }
     .nav-tnw{
         width: 100%;
         height: 32px;
+        
+    }
+    .nav-tnw li, .nav-sections li{
+        float: left;
+        height: 100%;
+        /* padding: 5px 0 0 0; */
     }
     .nav-icons{
         height: 48px;
         top: 32px;
     }
+
+    .nav-icons li:first-child{
+        display: none;
+    }
+    .nav-icons li:last-child{
+        border-right: none;
+    }
+
+    .top-nav{
+        height:80px;
+    }
+
+    .logo a, .logo a div{
+        height: 100%;
+    }
+
+    .logo svg{
+        margin-top: 32px;
+    }
+
+    .nav-tnw, .nav-sections{
+        position: absolute;
+        left: 106px;
+    }
+    .nav-tnw{
+        top: 0;
+        
+    }
+    .nav-sections{
+        top: 32px;
+        height: 48px;
+        
+    }
+    .nav-sections li{
+        padding: 20px 0 0 20px;
+    }
+    .nav-tnw li{
+       
+        padding: 8px 0 0 20px;
+    }
 }
+
 /* NAVBAR */
