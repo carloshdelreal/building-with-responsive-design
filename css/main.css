@@ -373,6 +373,27 @@ a{
     .headlines{
         overflow: auto;
     }
+    .headlines>div:first-child .headline-wrapper{
+        top: 150px
+    }
+    .headlines>div:first-child .headline-wrapper div>p{
+        font-size: 2em;
+    }
+    .headlines>div:nth-child(2) .headline-wrapper div>p{
+        font-size: 0.8em;
+    }
+    .headlines>div:nth-child(2) .headline-wrapper li{
+        font-size: 0.7em;
+        padding: 0 0 0 0;
+
+    }
+    .headlines>div:nth-child(3) .headline-wrapper div>p{
+        font-size: 0.8em;
+    }
+    .headlines>div:nth-child(3) .headline-wrapper li{
+        font-size: 0.7em;
+        padding: 0 0 0 0;
+    }
 
 }
 
