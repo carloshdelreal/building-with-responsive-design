@@ -149,6 +149,55 @@ a{
     background-color: red;
     display: block;
 }
+.banner-yellow{
+    background-color: #ffdd33;
+    height: 30px;
+    text-align: center;
+}
+.banner-yellow p{
+    padding: 8px 0 0 0;
+}
+
+/* HEADLINES */
+
+.headlines{
+    padding: 4px;
+}
+
+.headline{
+    padding: 4px;
+    
+}
+
+.headline a>div{     
+    height: 179.5px;
+    -webkit-transition: background-color .4s ease;
+   background: rgba(0,0,0,.25) url(../img/image-gradient.png) no-repeat;
+   background-size: 100% 100%;
+   display: block;
+   z-index: 2;
+}
+.headline a{
+    display: block;
+    height: 179.5px;
+
+}
+.headlines div:first-child a{
+    background:
+        url(../img/cryptocurrency-zuckerberg-bitcoin-globalcoin-facebook-asset-token-surveillance-796x448.jpg) 0px 0px no-repeat;
+    
+}
+.headlines div:nth-child(2) a{
+    background:
+        url(../img/robot1200-796x417.png) 0px 0px no-repeat;
+}
+.headlines div:nth-child(3) a{
+    background:
+        url(../img/russia-cryptocurrency-windows-hackers-796x431.jpg) 0px 0px no-repeat;
+}
+/* HEADLINES */
+
+
 
 @media only screen and (min-width: 768px){
 
@@ -212,6 +261,13 @@ a{
        
         padding: 8px 0 0 20px;
     }
+    .banner-yellow{
+        text-align: left;
+    }
+    .banner-yellow p{
+        padding: 8px 0 0 126px;
+    }
+
 }
 
 @media only screen and (min-width: 1028px){
@@ -220,5 +276,8 @@ a{
     }
     .nav-tnw, .nav-sections{
         left: 0;
+    }
+    .banner-yellow p{
+        padding: 8px 0 0 20px;
     }
 }
