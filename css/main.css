@@ -166,8 +166,13 @@ a{
 
 .headline{
     padding: 4px 0.5% 4px 0.5%;
-    position: relative;
-    
+    position: relative; 
+}
+.headline svg{
+    visibility: hidden;
+}
+.headline>a p{
+    visibility: hidden;
 }
 
 .headline>a>div{
@@ -191,33 +196,34 @@ a{
 .headlines>div:nth-child(2)>a{
     background:
         url(../img/robot1200-796x417.png) 0px -90px no-repeat;
-        background-size: 100%;
+    background-size: 100%;
 }
 .headlines>div:nth-child(3)>a{
     background:
         url(../img/russia-cryptocurrency-windows-hackers-796x431.jpg) 0px -90px no-repeat;
-        background-size: 100%;
+    background-size: 100%;
 }
 
 .headline-wrapper{
     position: absolute;
     height: 86px;
-    width: 100%;
+    width: 99%;
     top: 87px;
     color: #fff;
 }
 .headline-wrapper ul{
     display: flex;
     line-height: 2;
+    padding: 0 0 0 26px;
 }
 .headline-wrapper li{
     position: relative;
-    padding: 0px 16px 0px 26px;
 }
 .headline-wrapper span{
-    position: absolute;
+    position: relative;
     top: 3px;
     left: 0px;
+    padding: 0px 5px;
 }
 .headline-wrapper>div>p{
     padding: 0 0 0 26px;
@@ -340,8 +346,8 @@ a{
     .headlines>div:first-child>a{
         background:
         url(../img/cryptocurrency-zuckerberg-bitcoin-globalcoin-facebook-asset-token-surveillance-796x448.jpg) 0px 0px no-repeat;
-        height: 359px;
-        background-size: 100%;
+        height: 370px;
+        background-size: auto 100%;
     }    
     
     .headlines>div:nth-child(2){
@@ -373,26 +379,34 @@ a{
     .headlines{
         overflow: auto;
     }
+    .headline-wrapper{
+        width: 95%;
+
+    }
     .headlines>div:first-child .headline-wrapper{
         top: 150px
     }
     .headlines>div:first-child .headline-wrapper div>p{
         font-size: 2em;
+        padding: 0 0 0 5px;
     }
     .headlines>div:nth-child(2) .headline-wrapper div>p{
         font-size: 0.8em;
+        padding: 0 0 0 5px;
     }
     .headlines>div:nth-child(2) .headline-wrapper li{
         font-size: 0.7em;
-        padding: 0 0 0 0;
 
     }
     .headlines>div:nth-child(3) .headline-wrapper div>p{
         font-size: 0.8em;
+        padding: 0 0 0 5px;
     }
     .headlines>div:nth-child(3) .headline-wrapper li{
         font-size: 0.7em;
-        padding: 0 0 0 0;
+    }
+    .headline-wrapper ul{
+        padding: 0 0 0 5px;
     }
 
 }
@@ -407,4 +421,59 @@ a{
     .banner-yellow p{
         padding: 8px 0 0 20px;
     }
+    .headline-wrapper>div{
+        font-size: 1.2em;
+    }
+    .headlines>div:first-child>a>div{
+        -webkit-transition: background-color .4s ease;
+        background-image: linear-gradient(to right bottom, rgba(255,0,0,1) 0%,rgba(255,0,0,0) 50% );
+        display: block;
+        z-index: 2;
+    }
+    .headline svg{
+        visibility: visible;
+        width: 350px;
+        margin: 30px 0 0 30px;
+    }
+    .headline>a p{
+        visibility: visible;
+        float: right;
+        color: white;
+        margin: 15px 15px 0 0;
+    }
+    .headlines>div:first-child>a>div{
+        height: 452px;
+        background: rgba(0,0,0,.25) url(../img/image-gradient.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .headlines>div:first-child>a{
+        background:
+        url(../img/cryptocurrency-zuckerberg-bitcoin-globalcoin-facebook-asset-token-surveillance-796x448.jpg) 0px 0px no-repeat;
+        height: 452px;
+        background-size: auto 100%;
+    }
+
+    .headlines>div:nth-child(2)>a>div{
+        height: 222px;
+    }
+    .headlines>div:nth-child(2)>a{
+        height: 222px;
+        background:
+            url(../img/robot1200-796x417.png) 0px 0px no-repeat;
+        background-size: auto 100%;
+    }
+    .headline-wrapper{
+        top: 120px;
+    }
+
+    .headlines>div:nth-child(3)>a>div{
+        height: 222px;
+    }
+    .headlines>div:nth-child(3)>a{
+        height: 222px;
+        background:
+            url(../img/russia-cryptocurrency-windows-hackers-796x431.jpg) 0px 0px no-repeat;
+        background-size: auto 100%;
+    }
+    
 }
