@@ -166,40 +166,92 @@ a{
 
 .headline{
     padding: 4px 0.5% 4px 0.5%;
+    position: relative;
     
 }
 
-.headline a>div{     
-    height: 175.5px;
+.headline>a>div{
+    height: 179.5px;
     -webkit-transition: background-color .4s ease;
     background: rgba(0,0,0,.25) url(../img/image-gradient.png) no-repeat;
     background-size: 100% 100%;
     display: block;
     z-index: 2;
 }
-.headline a{
+.headline>a{
     display: block;
-    height: 175.5px;
-
+    height: 179.5px;
 }
-.headlines div:first-child a{
+.headlines>div:first-child>a{
     background:
         url(../img/cryptocurrency-zuckerberg-bitcoin-globalcoin-facebook-asset-token-surveillance-796x448.jpg) 0px -100px no-repeat;
         background-size: 100%;
     
 }
-.headlines div:nth-child(2) a{
+.headlines>div:nth-child(2)>a{
     background:
         url(../img/robot1200-796x417.png) 0px -90px no-repeat;
         background-size: 100%;
 }
-.headlines div:nth-child(3) a{
+.headlines>div:nth-child(3)>a{
     background:
         url(../img/russia-cryptocurrency-windows-hackers-796x431.jpg) 0px -90px no-repeat;
         background-size: 100%;
 }
+
+.headline-wrapper{
+    position: absolute;
+    height: 86px;
+    width: 100%;
+    top: 87px;
+    color: #fff;
+}
+.headline-wrapper ul{
+    display: flex;
+    line-height: 2;
+}
+.headline-wrapper li{
+    position: relative;
+    padding: 0px 16px 0px 26px;
+}
+.headline-wrapper span{
+    position: absolute;
+    top: 3px;
+    left: 0px;
+}
+.headline-wrapper>div>p{
+    padding: 0 0 0 26px;
+}
+.headline-wrapper>div>p:first-child{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+.headline-wrapper>div>p:last-child{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+}
 /* HEADLINES */
 
+.icon--clock--light{
+    display: inline-block;
+    background: transparent url(../img/icons-sprite.svg) no-repeat;
+    
+    background-position: -160px -160px;
+    width: 16px;
+    height: 16px;
+ }
+ .icon--share--light {
+    display: inline-block;
+    background: transparent url(../img/icons-sprite.svg) no-repeat;
+    background-size: 1296px 1296px;
+    background-position: -912px -912px;
+    width: 16px;
+    height: 16px;
+
+ }
 
 
 @media only screen and (min-width: 768px){
@@ -279,7 +331,7 @@ a{
     
     /* GRADIENT */
     .headlines>div:first-child>a>div{
-        height: 359px;
+        height: 370px;
         background: rgba(0,0,0,.25) url(../img/image-gradient.png) no-repeat;
         background-size: 100% 100%;
     }
