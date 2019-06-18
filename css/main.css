@@ -161,39 +161,42 @@ a{
 /* HEADLINES */
 
 .headlines{
-    padding: 4px;
+    padding: 4px 0.5% 4px 0.5%;
 }
 
 .headline{
-    padding: 4px;
+    padding: 4px 0.5% 4px 0.5%;
     
 }
 
 .headline a>div{     
-    height: 179.5px;
+    height: 175.5px;
     -webkit-transition: background-color .4s ease;
-   background: rgba(0,0,0,.25) url(../img/image-gradient.png) no-repeat;
-   background-size: 100% 100%;
-   display: block;
-   z-index: 2;
+    background: rgba(0,0,0,.25) url(../img/image-gradient.png) no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    z-index: 2;
 }
 .headline a{
     display: block;
-    height: 179.5px;
+    height: 175.5px;
 
 }
 .headlines div:first-child a{
     background:
-        url(../img/cryptocurrency-zuckerberg-bitcoin-globalcoin-facebook-asset-token-surveillance-796x448.jpg) 0px 0px no-repeat;
+        url(../img/cryptocurrency-zuckerberg-bitcoin-globalcoin-facebook-asset-token-surveillance-796x448.jpg) 0px -100px no-repeat;
+        background-size: 100%;
     
 }
 .headlines div:nth-child(2) a{
     background:
-        url(../img/robot1200-796x417.png) 0px 0px no-repeat;
+        url(../img/robot1200-796x417.png) 0px -90px no-repeat;
+        background-size: 100%;
 }
 .headlines div:nth-child(3) a{
     background:
-        url(../img/russia-cryptocurrency-windows-hackers-796x431.jpg) 0px 0px no-repeat;
+        url(../img/russia-cryptocurrency-windows-hackers-796x431.jpg) 0px -90px no-repeat;
+        background-size: 100%;
 }
 /* HEADLINES */
 
@@ -266,6 +269,57 @@ a{
     }
     .banner-yellow p{
         padding: 8px 0 0 126px;
+    }
+
+
+    .headlines>div:first-child{
+        width: 70%;
+        float: left;
+    }
+    
+    /* GRADIENT */
+    .headlines>div:first-child>a>div{
+        height: 359px;
+        background: rgba(0,0,0,.25) url(../img/image-gradient.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    /* DIVS */
+    .headlines>div:first-child>a{
+        background:
+        url(../img/cryptocurrency-zuckerberg-bitcoin-globalcoin-facebook-asset-token-surveillance-796x448.jpg) 0px 0px no-repeat;
+        height: 359px;
+        background-size: 100%;
+    }    
+    
+    .headlines>div:nth-child(2){
+        float: right;
+        overflow: auto;
+        width: 28%;
+    }
+    .headlines>div:nth-child(2)>a{
+        width: 100%;
+        display: inline-block;
+        background:
+            url(../img/robot1200-796x417.png) 0px 0px no-repeat;
+        background-size: 100%;
+    }
+
+    .headlines>div:nth-child(3){
+        float: right;
+        overflow: auto;
+        width: 28%;
+    }
+    .headlines>div:nth-child(3)>a{
+        width: 100%;
+        display: inline-block;
+        background:
+        url(../img/russia-cryptocurrency-windows-hackers-796x431.jpg) 0px 0px no-repeat;
+        background-size: 100%;
+    }
+    
+    .headlines{
+        overflow: auto;
     }
 
 }
