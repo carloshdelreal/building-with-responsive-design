@@ -279,7 +279,7 @@ a{
     color: #ff4422;
 }
 
-.latest-news .row{
+.row{
     display: flex;
     flex-wrap: wrap;
 }
@@ -418,6 +418,9 @@ a{
     height: 16px;
  }
 
+ .founding:last-child{
+     display: none;
+ }
 
 /* lates founding */
 
@@ -707,6 +710,9 @@ a{
         right: 10px;
     }
 
+    .founding:last-child{
+        display: block;
+    }
     /* Latest founding  */
 
     
