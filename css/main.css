@@ -547,6 +547,33 @@ a{
     background-position: 50%;
 }
 
+/* footer */
+footer .footer-links{
+    height: 161px;
+    background: #131313;
+}
+
+footer .wrapper{
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .wrapper ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer ul li a{
+    color: #aaa;
+}
+footer .footer-legal{
+    height: 122px;
+    background: #000;
+}
+
 /* media queries */
 @media only screen and (min-width: 768px){
 
