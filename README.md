@@ -1,4 +1,4 @@
-# Building with Backgrounds and Gradients Project
+# Building with Responsive Design Project
 
 In this project was developed a clone of the TNW website [https://thenextweb.com/](https://thenextweb.com/), this project was developed using structure and methodology of [The Odin Project](https://www.theodinproject.com/). we had to implement many of the techniques shown in the lectures for UX/UI and responsive desing.
 
