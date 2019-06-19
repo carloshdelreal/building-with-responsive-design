@@ -546,6 +546,26 @@ a{
     margin-right: 12px;
     background-position: 50%;
 }
+.latest-deals .img-article{
+    position: relative;
+}
+.latest-deals .img-article>div{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    visibility: hidden;
+
+    background-image: url(../img/deals-ribbon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #000;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    /* pointer-events: none; */
+}
+/* latest deals */
+
 
 /* footer */
 footer .footer-links{
@@ -766,6 +786,24 @@ footer .footer-legal{
         height: 175px;
     }
 
+    /* categories */
+
+    /* latest deals */
+
+    .latest-deals .img-article>div{
+        visibility: visible;
+    }
+    .text-rotated{
+        transform: rotate(45deg);
+        font-size: 14px;
+        font-weight: 700;
+        left: 8px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        top: 20px;
+        width: 100%;
+    }
 
 }
 
