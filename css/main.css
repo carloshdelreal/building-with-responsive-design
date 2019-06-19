@@ -394,7 +394,13 @@ a{
     padding: 15px 0 15px 20px;
     border-top: 1px solid rgba(255,68,34,.25);
 }
-
+.founding ul a,
+.founding-content a{
+    color:#555;
+}
+.founding ul a span{
+    color: #aaa;
+}
 .icon--tag--dark {
     display: inline-block;
     background: transparent url(../img/icons-sprite.svg) no-repeat;
