@@ -260,21 +260,25 @@ a{
 
  }
 
- /* latest post default style */
- .latest-news{
+/* latest post default style */
+.latest-news,
+.latest-founding{
     max-width: 1152px;
     margin: 0 auto;
     padding: 10px;
 }
- .latest-news h2{
+ .latest-news h2,
+ .latest-founding h2{
     font-size: 1.75rem;
     font-weight: 600;
     margin-left: 1%;
 }
 
-.latest-news h2 a{
+.latest-news h2 a,
+.latest-founding h2 a{
     color: #ff4422;
 }
+
 .latest-news .row{
     display: flex;
     flex-wrap: wrap;
@@ -319,6 +323,100 @@ a{
 }
 
 /* latest post default style */
+
+
+/* lates founding */
+
+.latest-founding-nav li{
+    font-size: 14px;
+    margin: 11px 0 0 0;
+    color: #f42
+
+}
+.founding-header{
+    position: relative;
+    display: block;
+}
+.img-founding{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.founding-header>h4{
+    background-color: #f42;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    padding: 15px 0px 15px 85px;
+}
+.fh-content{
+    background-color: rgba(255,68,34,.08);
+    padding: 15px 0 15px 85px;
+}
+.fh-content h4{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 0 0 0px;
+}
+.fh-content h5{
+    font-size: 11px;
+    padding: 5px 0 0 0px;
+}
+
+.founding-header>div:last-child{
+    background-color: rgba(255,68,34,.08); 
+    color: black;
+}
+.img-founding{
+    width: 60px;
+    height: 60px;
+    background:
+        url(../img/bodyhealth.png) 0px 0px no-repeat;
+    background-size: cover;
+}
+.founding-content{
+    padding: 16px 0px 16px 20px;
+}
+.founding-content a{
+    display: block;
+}
+.founding-content span{
+    padding: 0 5px 0 0;
+}
+.founding{
+    background-color: #fffaf8;
+}
+.founding li{
+    display: inline-block;
+    padding: 0 15px 0 0;
+}
+.founding ul{
+    padding: 15px 0 15px 20px;
+    border-top: 1px solid rgba(255,68,34,.25);
+}
+
+.icon--tag--dark {
+    display: inline-block;
+    background: transparent url(../img/icons-sprite.svg) no-repeat;
+    background-size: 1296px 1296px;
+    background-position: -976px -976px;
+    width: 16px;
+    height: 16px;
+ }
+ .icon--briefcase--dark {
+    display: inline-block;
+    background: transparent url(../img/icons-sprite.svg) no-repeat;
+    background-size: 1296px 1296px;
+    background-position: -48px -48px;
+    width: 16px;
+    height: 16px;
+ }
+
+
+/* lates founding */
+
+
+
 
 /* media queries */
 @media only screen and (min-width: 768px){
@@ -484,6 +582,22 @@ a{
         float:none;
         margin-right:0; 
     }
+    /* latest post */
+
+
+    /* Latest founding  */
+
+    .latest-founding-nav li{
+        display: inline;
+        margin: 0px 10px 0px 0px;
+        padding: 0px 10px 0 0;
+        border-right: 1px solid;
+    }
+    .latest-founding-nav li:last-child{
+        border-right: none;
+    }
+
+    /* Latest founding  */
 
 
 
@@ -573,6 +687,21 @@ a{
         color: #000;
         font-weight: 600;
     }
+
+    /* Latest founding  */
+
+    .latest-founding{
+        position: relative;
+    }
+    .latest-founding-nav-container{
+        position: absolute;
+        text-align: right;
+        width: 50%;
+        top: 10px;
+        right: 10px;
+    }
+
+    /* Latest founding  */
 
     
 }
