@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    font-size: 16px;
 }
 ol, ul {
 	list-style: none;
@@ -259,7 +260,67 @@ a{
 
  }
 
+ /* latest post default style */
+ .latest-news{
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 10px;
+}
+ .latest-news h2{
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-left: 1%;
+}
 
+.latest-news h2 a{
+    color: #ff4422;
+}
+.latest-news .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4-4{
+    width: 98%;
+    padding: 1%;
+}
+
+.col-1-4 .img-article{
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/Untitled-design-34-516x270.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    float: left;
+    margin-right: 12px;
+}
+
+.col-1-4 a p{
+    color: #000;
+    font-weight: 600;
+}
+
+.col-1-4 a p:hover{
+    color: #f42;
+}
+.col-1-4 a p, 
+.col-1-4 .img-article{
+    margin-bottom: 8px;
+}
+
+.col-1-4 .posted-by, 
+.col-1-4 .posted-by a{
+    font-size: 0.8125rem;
+    color: #aaa;
+}
+.col-1-4 .posted-by a:hover{
+    color: #555;
+}
+
+/* latest post default style */
+
+/* media queries */
 @media only screen and (min-width: 768px){
 
     .logo{
@@ -409,6 +470,23 @@ a{
         padding: 0 0 0 5px;
     }
 
+    /* Headlines */
+
+    /* latest post */
+    .col-1-3{
+        width: 31.33%;
+        padding: 1%;
+    }
+
+    .col-1-3 .img-article{
+        width: 100%;
+        height: 135px;   
+        float:none;
+        margin-right:0; 
+    }
+
+
+
 }
 
 @media only screen and (min-width: 1028px){
@@ -421,6 +499,7 @@ a{
     .banner-yellow p{
         padding: 8px 0 0 20px;
     }
+    /* headlines */
     .headline-wrapper>div{
         font-size: 1.2em;
     }
@@ -475,5 +554,25 @@ a{
             url(../img/russia-cryptocurrency-windows-hackers-796x431.jpg) 0px 0px no-repeat;
         background-size: auto 100%;
     }
+
+    /* headlines */
+    
+    
+    .col-1-4{
+        width: 23%;
+        padding: 1%;
+    }
+
+    .col-1-4 .img-article{
+        height: 135px;    
+        float:none;
+        margin-right:0;
+    }
+
+    .col-1-4 a p{
+        color: #000;
+        font-weight: 600;
+    }
+
     
 }
