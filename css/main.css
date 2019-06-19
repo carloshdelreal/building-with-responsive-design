@@ -263,14 +263,16 @@ a{
 /* latest post default style */
 .latest-news,
 .latest-founding,
-.categories{
+.categories,
+.latest-deals{
     max-width: 1152px;
     margin: 0 auto;
     padding: 10px;
 }
  .latest-news h2,
  .latest-founding h2,
- .categories h2{
+ .categories h2,
+ .latest-deals h2{
     font-size: 1.75rem;
     font-weight: 600;
     margin-left: 1%;
@@ -278,7 +280,8 @@ a{
 
 .latest-news h2 a,
 .latest-founding h2 a,
-.categories h2>a{
+.categories h2>a,
+.latest-deals h2 a{
     color: #ff4422;
 }
 
@@ -312,7 +315,8 @@ a{
     color: #f42;
 }
 .col-1-4 a p, 
-.col-1-4 .img-article{
+.col-1-4 .img-article, 
+.latest-deals .col-1-4 .img-article{
     margin-bottom: 8px;
 }
 
@@ -529,7 +533,19 @@ a{
 
 /* categories */
 
+/* latest deals */
 
+.latest-deals .col-1-4 .img-article{
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/sale_19942_primary_image.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    float: left;
+    margin-right: 12px;
+    background-position: 50%;
+}
 
 /* media queries */
 @media only screen and (min-width: 768px){
@@ -689,7 +705,8 @@ a{
         padding: 1%;
     }
 
-    .col-1-3 .img-article{
+    .col-1-3 .img-article, 
+    .latest-deals .col-1-3 .img-article{
         width: 100%;
         height: 135px;   
         float:none;
@@ -716,6 +733,10 @@ a{
     .col-2-4{
         width: 48%;
         padding: 1%;
+    }
+
+    .latest-deals .col-1-3 .img-article{
+        height: 175px;
     }
 
 
@@ -798,10 +819,15 @@ a{
         padding: 1%;
     }
 
-    .col-1-4 .img-article{
+    .col-1-4 .img-article,
+    .latest-deals .col-1-4 .img-article{
         height: 135px;    
         float:none;
         margin-right:0;
+    }
+
+    .latest-deals .col-1-3 .img-article{
+        height: 175px;
     }
 
     .col-1-4 a p{
