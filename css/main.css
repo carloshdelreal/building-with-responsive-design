@@ -59,17 +59,21 @@ b{
     color: #f42;
 }
 /* NAVBAR */
-
+.main{
+    padding-top: 72px; 
+}
 .top-nav{
+    background-color: white;
     height: 48px;
-    position: relative;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
 }
 
 .logo{
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: auto;
     z-index: 1;
     
@@ -155,9 +159,12 @@ b{
     display: block;
 }
 .banner-yellow{
+    position: absolute;
+    width: 100%;
     background-color: #ffdd33;
     height: 30px;
     text-align: center;
+    top: 48px;
 }
 .banner-yellow p{
     padding: 8px 0 0 0;
@@ -675,6 +682,12 @@ footer .wrapper .social-icons{
 
     .logo{
         height: 80px;
+    }
+    .banner-yellow{
+        top: 80px;
+    }
+    main{
+        padding-top: 103px;
     }
     .nav-tnw, .nav-sections{
         visibility: visible;
