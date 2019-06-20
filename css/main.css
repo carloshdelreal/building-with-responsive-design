@@ -339,6 +339,9 @@ b{
 .col-1-4 .posted-by a:hover{
     color: #555;
 }
+.latest-news article header{
+    display: none;
+}
 
 /* latest post default style */
 
@@ -541,6 +544,12 @@ b{
     left: 0;
     
 }
+.categories article header{
+    display: none;
+}
+.categories>header{
+    display: none;
+}
 
 /* categories */
 
@@ -581,6 +590,9 @@ b{
     font-weight: 400;
     padding-top: 8px;
 
+}
+.latest-deals article>header{
+    display: none;
 }
 /* latest deals */
 
