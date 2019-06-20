@@ -564,6 +564,13 @@ a{
     overflow: hidden;
     /* pointer-events: none; */
 }
+.right-a{
+    float: right;
+    font-size: 0.6em;
+    font-weight: 400;
+    padding-top: 8px;
+
+}
 /* latest deals */
 
 
@@ -575,15 +582,12 @@ footer .footer-links{
 
 footer .wrapper{
     padding: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 footer .wrapper ul{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    padding: 25px 0 15px 0;
 }
 
 footer ul li a{
@@ -593,6 +597,63 @@ footer .footer-legal{
     height: 122px;
     background: #000;
 }
+footer .wrapper .social-icons{
+    padding: 60px 0 0 0;
+
+
+}
+.social-icons>li>a{
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #333;
+    padding: 12px;
+}
+.social-icons li{
+    margin: 0 7px 0 7px;
+}
+
+.wrapper li{
+    margin: 0 7px 0 7px;
+}    
+
+.icon{
+    display: inline-block;
+    background: transparent url(../img/icons-sprite.svg) no-repeat;
+    background-size: 1296px 1296px;
+    background-position: -912px -912px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon--facebook--light {
+    background-position: -272px -272px;
+}
+
+.icon--twitter--light {
+    background-position: -1024px -1024px;
+}
+
+.icon--youtube--light {
+    background-position: -1280px -1280px;
+}
+
+.icon--instagram--light {
+    background-position: -416px -416px;
+}
+
+.icon--pinterest--light {
+    background-position: -672px -672px;
+}
+
+.icon--rss--light {
+    background-position: -816px -816px;
+}
+.icon--mail--light {
+    background-position: -576px -576px;
+ }
+
 
 /* media queries */
 @media only screen and (min-width: 768px){
