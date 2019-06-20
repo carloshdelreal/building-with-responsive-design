@@ -54,6 +54,10 @@ body, *:after, *:before{
 a{
     text-decoration: none;
 }
+
+b{
+    color: #f42;
+}
 /* NAVBAR */
 
 .top-nav{
@@ -582,6 +586,7 @@ footer .footer-links{
 
 footer .wrapper{
     padding: 0 20px;
+    color: #aaa;
 }
 
 footer .wrapper ul{
@@ -594,8 +599,9 @@ footer ul li a{
     color: #aaa;
 }
 footer .footer-legal{
-    height: 122px;
+    /* height: 122px; */
     background: #000;
+    padding: 40px 0;
 }
 footer .wrapper .social-icons{
     padding: 60px 0 0 0;
@@ -653,7 +659,16 @@ footer .wrapper .social-icons{
 .icon--mail--light {
     background-position: -576px -576px;
  }
+/* footer bottom */
+.footer-legal span{
+    display: block;
+    text-align: center;
+}
 
+.footer-legal img{
+    height: 9px;
+}
+/*  */
 
 /* media queries */
 @media only screen and (min-width: 768px){
@@ -866,6 +881,20 @@ footer .wrapper .social-icons{
         width: 100%;
     }
 
+    /* footer */
+    /* footer .footer-legal{
+        height: 17px;
+        padding: 40px 0;
+    } */
+    footer .footer-legal span{
+        display: inline;
+        text-align: center;
+    }
+
+    footer .footer-legal .wrapper{
+        text-align: center;
+    }
+
 }
 
 @media only screen and (min-width: 1028px){
@@ -979,5 +1008,4 @@ footer .wrapper .social-icons{
     }
     /* Latest founding  */
 
-    
 }
