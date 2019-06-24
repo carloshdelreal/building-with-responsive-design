@@ -1,0 +1,1036 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-size: 16px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body, *:after, *:before{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+b{
+    color: #f42;
+}
+/* NAVBAR */
+.main{
+    padding-top: 72px; 
+}
+.top-nav{
+    background-color: white;
+    height: 48px;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    z-index: 1;
+    
+}
+.logo a{
+    display: block;
+    width: 106px;
+    height: 48px;
+}
+.logo div{
+    background: 
+        linear-gradient( to bottom right,magenta,yellow);
+    width: 106px;
+    height: 48px;
+}
+.logo svg{
+    width: 60px;
+    margin: 18.75% 0px 0px 23.75%;
+}
+.nav-tnw{
+    background: #131313;
+    
+}
+.nav-tnw a{
+    color: hsla(0,0%,100%,.6);
+}
+.nav-tnw a:hover{
+    color:#fff;
+}
+
+.nav-sections a{
+    color: #aaa;
+}
+
+.nav-sections a:hover{
+    color:#000;
+}
+.nav-tnw, .nav-sections{
+    /* background-color: aquamarine; */
+    visibility: hidden;
+}
+
+.nav-icons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    height: 48px;
+    
+    z-index: 0;
+}
+.nav-icons li:first-child{
+    float: right;
+    width: 45px;
+    height: 48px;
+}
+.nav-icons li:first-child div{
+    width: 16px;
+    height: 19px;
+    margin: 15px 0px 0px 6px;
+}
+
+.nav-icons li:last-child{
+    float: right;
+    /* background-color: yellow; */
+    width: 45px;
+    height: 48px;
+
+    border-left: 1px solid #cacaca;
+    border-right: 1px solid #cacaca;
+}
+.nav-icons li:last-child div{
+    background: url(../img/icons-sprite.svg) -832px -831px no-repeat;
+    width: 16px;
+    height: 19px;
+    margin: 16px 0px 0px 16px;
+}
+.nav-icons span{
+    width: 22px;
+    height: 2px;
+    margin: 6px 0px 0px 5px;
+    background-color: red;
+    display: block;
+}
+.banner-yellow{
+    position: absolute;
+    width: 100%;
+    background-color: #ffdd33;
+    height: 30px;
+    text-align: center;
+    top: 48px;
+}
+.banner-yellow p{
+    padding: 8px 0 0 0;
+}
+
+/* HEADLINES */
+
+.headlines{
+    padding: 4px 0.5% 4px 0.5%;
+}
+
+.headline{
+    padding: 4px 0.5% 4px 0.5%;
+    position: relative; 
+}
+.headline svg{
+    visibility: hidden;
+}
+.headline>a p{
+    visibility: hidden;
+}
+
+.headline>a>div{
+    height: 179.5px;
+    -webkit-transition: background-color .4s ease;
+    background: rgba(0,0,0,.25) url(../img/image-gradient.png) no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    z-index: 2;
+}
+.headline>a{
+    display: block;
+    height: 179.5px;
+}
+.headlines>div:first-child>a{
+    background:
+        url(../img/cryptocurrency-zuckerberg-bitcoin-globalcoin-facebook-asset-token-surveillance-796x448.jpg) 0px -100px no-repeat;
+        background-size: 100%;
+    
+}
+.headlines>div:nth-child(2)>a{
+    background:
+        url(../img/robot1200-796x417.png) 0px -90px no-repeat;
+    background-size: 100%;
+}
+.headlines>div:nth-child(3)>a{
+    background:
+        url(../img/russia-cryptocurrency-windows-hackers-796x431.jpg) 0px -90px no-repeat;
+    background-size: 100%;
+}
+
+.headline-wrapper{
+    position: absolute;
+    height: 86px;
+    width: 99%;
+    top: 87px;
+    color: #fff;
+}
+.headline-wrapper ul{
+    display: flex;
+    line-height: 2;
+    padding: 0 0 0 26px;
+}
+.headline-wrapper li{
+    position: relative;
+}
+.headline-wrapper span{
+    position: relative;
+    top: 3px;
+    left: 0px;
+    padding: 0px 5px;
+}
+.headline-wrapper>div>p{
+    padding: 0 0 0 26px;
+}
+.headline-wrapper>div>p:first-child{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+.headline-wrapper>div>p:last-child{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+/* HEADLINES */
+
+.icon--clock--light{
+    display: inline-block;
+    background: transparent url(../img/icons-sprite.svg) no-repeat;
+    
+    background-position: -160px -160px;
+    width: 16px;
+    height: 16px;
+ }
+ .icon--share--light {
+    display: inline-block;
+    background: transparent url(../img/icons-sprite.svg) no-repeat;
+    background-size: 1296px 1296px;
+    background-position: -912px -912px;
+    width: 16px;
+    height: 16px;
+
+ }
+
+/* latest post default style */
+.latest-news,
+.latest-founding,
+.categories,
+.latest-deals{
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 10px;
+}
+ .latest-news h2,
+ .latest-founding h2,
+ .categories h2,
+ .latest-deals h2{
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-left: 1%;
+}
+
+.latest-news h2 a,
+.latest-founding h2 a,
+.categories h2>a,
+.latest-deals h2 a{
+    color: #ff4422;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4-4{
+    width: 98%;
+    padding: 1%;
+}
+
+.col-1-4 .img-article{
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/Untitled-design-34-516x270.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    float: left;
+    margin-right: 12px;
+}
+
+.col-1-4 a p{
+    color: #000;
+    font-weight: 600;
+}
+
+.col-1-4 a p:hover{
+    color: #f42;
+}
+.col-1-4 a p, 
+.col-1-4 .img-article, 
+.latest-deals .col-1-4 .img-article{
+    margin-bottom: 8px;
+}
+
+.col-1-4 .posted-by, 
+.col-1-4 .posted-by a{
+    font-size: 0.8125rem;
+    color: #aaa;
+}
+.col-1-4 .posted-by a:hover{
+    color: #555;
+}
+.latest-news article header{
+    display: none;
+}
+
+/* latest post default style */
+
+
+/* lates founding */
+
+.latest-founding-nav li{
+    font-size: 14px;
+    margin: 11px 0 0 0;
+    color: #f42
+
+}
+.founding-header{
+    position: relative;
+    display: block;
+}
+.img-founding{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.founding-header>h4{
+    background-color: #f42;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    padding: 15px 0px 15px 85px;
+}
+.fh-content{
+    background-color: rgba(255,68,34,.08);
+    padding: 15px 0 15px 85px;
+}
+.fh-content h4{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 0 0 0px;
+}
+.fh-content h5{
+    font-size: 11px;
+    padding: 5px 0 0 0px;
+}
+
+.founding-header>div:last-child{
+    background-color: rgba(255,68,34,.08); 
+    color: black;
+}
+.img-founding{
+    width: 60px;
+    height: 60px;
+    background:
+        url(../img/bodyhealth.png) 0px 0px no-repeat;
+    background-size: cover;
+}
+.founding-content{
+    padding: 16px 0px 16px 20px;
+}
+.founding-content a{
+    display: block;
+}
+.founding-content span{
+    padding: 0 5px 0 0;
+}
+.founding{
+    background-color: #fffaf8;
+}
+.founding li{
+    display: inline-block;
+    padding: 0 15px 0 0;
+}
+.founding ul{
+    padding: 15px 0 15px 20px;
+    border-top: 1px solid rgba(255,68,34,.25);
+}
+.founding ul a,
+.founding-content a{
+    color:#555;
+}
+.founding ul a span{
+    color: #aaa;
+}
+.icon--tag--dark {
+    display: inline-block;
+    background: transparent url(../img/icons-sprite.svg) no-repeat;
+    background-size: 1296px 1296px;
+    background-position: -976px -976px;
+    width: 16px;
+    height: 16px;
+ }
+ .icon--briefcase--dark {
+    display: inline-block;
+    background: transparent url(../img/icons-sprite.svg) no-repeat;
+    background-size: 1296px 1296px;
+    background-position: -48px -48px;
+    width: 16px;
+    height: 16px;
+ }
+
+ .founding:last-child{
+     display: none;
+ }
+
+/* lates founding */
+
+/* categories */
+
+
+.categories-img{
+    margin: 5px 0 0 0;
+    position: relative;
+}
+
+.categories-img>a{
+    display: block;
+    background:
+        url(../img/Makeup-368x276.jpg) 0px 0px no-repeat;
+        background-size: cover;
+
+}
+.categories-img>a div{
+    height: 410px;
+    -webkit-transition: background-color .4s ease;
+    background: rgba(0,0,0,.25) url(../img/image-gradient.png) no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    z-index: 2;
+}
+.categories-img>header{
+    position: absolute;
+    top: 355px;
+    left: 12px;
+}
+.categories-img>header h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: white;
+
+}
+.categories-img>header h3 a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+
+}
+.categories-img>header li{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    display: inline-block
+}
+.categories-img> header li a{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+}
+
+.categories-latest{
+    background: rgba(255,68,34,.06);
+    height: 96px;
+}
+
+.categories-latest header{
+    height: 100%;
+    padding: 10px 100px 0 14px;
+}
+
+.categories-latest h3{
+    font-weight: 600;
+}
+
+.categories-latest a,
+.categories-latest h4{
+    color:#f42;
+}
+
+.categories-latest>a{
+    display: block;
+    width: 96px;
+    height: 100%;
+    background-image: url(../img/Chrome-Sites.jpg);
+    background-size: cover;
+    float: right;
+}
+
+.categories-list ul li{
+    border-bottom: 1px solid #eee;
+}
+.categories-list li a{
+    color: #555;
+    display: block;
+    padding: 10px;
+    position:relative;
+}
+
+.categories-list li a:before{
+    content: "";
+    border-radius: 50%;
+    background-color: #f42;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    
+}
+.categories article header{
+    display: none;
+}
+.categories>header{
+    display: none;
+}
+
+/* categories */
+
+/* latest deals */
+
+.latest-deals .col-1-4 .img-article{
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/sale_19942_primary_image.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    float: left;
+    margin-right: 12px;
+    background-position: 50%;
+}
+.latest-deals .img-article{
+    position: relative;
+}
+.latest-deals .img-article>div{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    visibility: hidden;
+
+    background-image: url(../img/deals-ribbon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #000;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    /* pointer-events: none; */
+}
+.right-a{
+    float: right;
+    font-size: 0.6em;
+    font-weight: 400;
+    padding-top: 8px;
+
+}
+.latest-deals article>header{
+    display: none;
+}
+/* latest deals */
+
+
+/* footer */
+footer .footer-links{
+    height: 161px;
+    background: #131313;
+}
+
+footer .wrapper{
+    padding: 0 20px;
+    color: #aaa;
+}
+
+footer .wrapper ul{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 15px 0;
+}
+
+footer ul li a{
+    color: #aaa;
+}
+footer .footer-legal{
+    /* height: 122px; */
+    background: #000;
+    padding: 40px 0;
+}
+footer .wrapper .social-icons{
+    padding: 60px 0 0 0;
+
+
+}
+.social-icons>li>a{
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #333;
+    padding: 12px;
+}
+.social-icons li{
+    margin: 0 7px 0 7px;
+}
+
+.wrapper li{
+    margin: 0 7px 0 7px;
+}    
+
+.icon{
+    display: inline-block;
+    background: transparent url(../img/icons-sprite.svg) no-repeat;
+    background-size: 1296px 1296px;
+    background-position: -912px -912px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon--facebook--light {
+    background-position: -272px -272px;
+}
+
+.icon--twitter--light {
+    background-position: -1024px -1024px;
+}
+
+.icon--youtube--light {
+    background-position: -1280px -1280px;
+}
+
+.icon--instagram--light {
+    background-position: -416px -416px;
+}
+
+.icon--pinterest--light {
+    background-position: -672px -672px;
+}
+
+.icon--rss--light {
+    background-position: -816px -816px;
+}
+.icon--mail--light {
+    background-position: -576px -576px;
+ }
+/* footer bottom */
+.footer-legal span{
+    display: block;
+    text-align: center;
+}
+
+.footer-legal img{
+    height: 9px;
+}
+/*  */
+
+/* media queries */
+@media only screen and (min-width: 768px){
+
+    .logo{
+        height: 80px;
+    }
+    .banner-yellow{
+        top: 80px;
+    }
+    main{
+        padding-top: 103px;
+    }
+    .nav-tnw, .nav-sections{
+        visibility: visible;
+    }
+    .nav-tnw{
+        width: 100%;
+        height: 32px;
+        
+    }
+    .nav-tnw li, .nav-sections li{
+        float: left;
+        height: 100%;
+        /* padding: 5px 0 0 0; */
+    }
+    .nav-icons{
+        height: 48px;
+        top: 32px;
+    }
+
+    .nav-icons li:first-child{
+        display: none;
+    }
+    .nav-icons li:last-child{
+        border-right: none;
+    }
+
+    .top-nav{
+        height:80px;
+    }
+
+    .logo a, .logo a div{
+        height: 100%;
+    }
+
+    .logo svg{
+        margin-top: 32px;
+    }
+
+    .nav-tnw, .nav-sections{
+        position: absolute;
+        left: 106px;
+    }
+    .nav-tnw{
+        top: 0;
+        
+    }
+    .nav-sections{
+        top: 32px;
+        height: 48px;
+        
+    }
+    .nav-sections li{
+        padding: 20px 0 0 20px;
+    }
+    .nav-tnw li{
+       
+        padding: 8px 0 0 20px;
+    }
+    .banner-yellow{
+        text-align: left;
+    }
+    .banner-yellow p{
+        padding: 8px 0 0 126px;
+    }
+
+
+    .headlines>div:first-child{
+        width: 70%;
+        float: left;
+    }
+    
+    /* GRADIENT */
+    .headlines>div:first-child>a>div{
+        height: 370px;
+        background: rgba(0,0,0,.25) url(../img/image-gradient.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    /* DIVS */
+    .headlines>div:first-child>a{
+        background:
+        url(../img/cryptocurrency-zuckerberg-bitcoin-globalcoin-facebook-asset-token-surveillance-796x448.jpg) 0px 0px no-repeat;
+        height: 370px;
+        background-size: auto 100%;
+    }    
+    
+    .headlines>div:nth-child(2){
+        float: right;
+        overflow: auto;
+        width: 28%;
+    }
+    .headlines>div:nth-child(2)>a{
+        width: 100%;
+        display: inline-block;
+        background:
+            url(../img/robot1200-796x417.png) 0px 0px no-repeat;
+        background-size: 100%;
+    }
+
+    .headlines>div:nth-child(3){
+        float: right;
+        overflow: auto;
+        width: 28%;
+    }
+    .headlines>div:nth-child(3)>a{
+        width: 100%;
+        display: inline-block;
+        background:
+        url(../img/russia-cryptocurrency-windows-hackers-796x431.jpg) 0px 0px no-repeat;
+        background-size: 100%;
+    }
+    
+    .headlines{
+        overflow: auto;
+    }
+    .headline-wrapper{
+        width: 95%;
+
+    }
+    .headlines>div:first-child .headline-wrapper{
+        top: 150px
+    }
+    .headlines>div:first-child .headline-wrapper div>p{
+        font-size: 2em;
+        padding: 0 0 0 5px;
+    }
+    .headlines>div:nth-child(2) .headline-wrapper div>p{
+        font-size: 0.8em;
+        padding: 0 0 0 5px;
+    }
+    .headlines>div:nth-child(2) .headline-wrapper li{
+        font-size: 0.7em;
+
+    }
+    .headlines>div:nth-child(3) .headline-wrapper div>p{
+        font-size: 0.8em;
+        padding: 0 0 0 5px;
+    }
+    .headlines>div:nth-child(3) .headline-wrapper li{
+        font-size: 0.7em;
+    }
+    .headline-wrapper ul{
+        padding: 0 0 0 5px;
+    }
+
+    /* Headlines */
+
+    /* latest post */
+    .col-1-3{
+        width: 31.33%;
+        padding: 1%;
+    }
+
+    .col-1-3 .img-article, 
+    .latest-deals .col-1-3 .img-article{
+        width: 100%;
+        height: 135px;   
+        float:none;
+        margin-right:0; 
+    }
+    /* latest post */
+
+
+    /* Latest founding  */
+
+    .latest-founding-nav li{
+        display: inline;
+        margin: 0px 10px 0px 0px;
+        padding: 0px 10px 0 0;
+        border-right: 1px solid;
+    }
+    .latest-founding-nav li:last-child{
+        border-right: none;
+    }
+
+    /* Latest founding  */
+
+    /* categories */
+    .col-2-4{
+        width: 48%;
+        padding: 1%;
+    }
+
+    .latest-deals .col-1-3 .img-article{
+        height: 175px;
+    }
+
+    /* categories */
+
+    /* latest deals */
+
+    .latest-deals .img-article>div{
+        visibility: visible;
+    }
+    .text-rotated{
+        transform: rotate(45deg);
+        font-size: 14px;
+        font-weight: 700;
+        left: 8px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        top: 20px;
+        width: 100%;
+    }
+
+    /* footer */
+    /* footer .footer-legal{
+        height: 17px;
+        padding: 40px 0;
+    } */
+    footer .footer-legal span{
+        display: inline;
+        text-align: center;
+    }
+
+    footer .footer-legal .wrapper{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 1028px){
+    .logo{
+        display: none;
+    }
+    .nav-tnw, .nav-sections{
+        left: 0;
+    }
+    .banner-yellow p{
+        padding: 8px 0 0 20px;
+    }
+    /* headlines */
+    .headline-wrapper>div{
+        font-size: 1.2em;
+    }
+    .headlines>div:first-child>a>div{
+        -webkit-transition: background-color .4s ease;
+        background-image: linear-gradient(to right bottom, rgba(255,0,0,1) 0%,rgba(255,0,0,0) 50% );
+        display: block;
+        z-index: 2;
+    }
+    .headline svg{
+        visibility: visible;
+        width: 350px;
+        margin: 30px 0 0 30px;
+    }
+    .headline>a p{
+        visibility: visible;
+        float: right;
+        color: white;
+        margin: 15px 15px 0 0;
+    }
+    .headlines>div:first-child>a>div{
+        height: 452px;
+        background: rgba(0,0,0,.25) url(../img/image-gradient.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .headlines>div:first-child>a{
+        background:
+        url(../img/cryptocurrency-zuckerberg-bitcoin-globalcoin-facebook-asset-token-surveillance-796x448.jpg) 0px 0px no-repeat;
+        height: 452px;
+        background-size: auto 100%;
+    }
+
+    .headlines>div:nth-child(2)>a>div{
+        height: 222px;
+    }
+    .headlines>div:nth-child(2)>a{
+        height: 222px;
+        background:
+            url(../img/robot1200-796x417.png) 0px 0px no-repeat;
+        background-size: auto 100%;
+    }
+    .headline-wrapper{
+        top: 120px;
+    }
+
+    .headlines>div:nth-child(3)>a>div{
+        height: 222px;
+    }
+    .headlines>div:nth-child(3)>a{
+        height: 222px;
+        background:
+            url(../img/russia-cryptocurrency-windows-hackers-796x431.jpg) 0px 0px no-repeat;
+        background-size: auto 100%;
+    }
+
+    /* headlines */
+    
+    .categories .col-1-3{
+        width: 31.33%;
+        padding: 1%;
+    }
+    .col-1-4{
+        width: 23%;
+        padding: 1%;
+    }
+
+    .col-1-4 .img-article,
+    .latest-deals .col-1-4 .img-article{
+        height: 135px;    
+        float:none;
+        margin-right:0;
+    }
+
+    .latest-deals .col-1-3 .img-article{
+        height: 175px;
+    }
+
+    .col-1-4 a p{
+        color: #000;
+        font-weight: 600;
+    }
+
+    /* Latest founding  */
+
+    .latest-founding{
+        position: relative;
+    }
+    .latest-founding-nav-container{
+        position: absolute;
+        text-align: right;
+        width: 50%;
+        top: 10px;
+        right: 10px;
+    }
+
+    .founding:last-child{
+        display: block;
+    }
+    /* Latest founding  */
+
+}
